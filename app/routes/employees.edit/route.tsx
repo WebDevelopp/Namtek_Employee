@@ -8,7 +8,6 @@ export async function loader({ params }: any) {
   if (!employee) {
     throw new Response("Employee not found", { status: 404 })
   }
-
   return { employee }
 }
 
